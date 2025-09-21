@@ -49,28 +49,6 @@ type TimelineItem = {
 
 const experience: TimelineItem[] = [
   {
-    years: '12/2024 – Present',
-    title: 'Lead Full Stack Engineer',
-    subtitle: 'Remote Technology Solutions – Remote',
-    points: [
-      'Accelerated canvas display and resize performance by 9× by throttling and resolving layout bottlenecks in a WebSocket terminal handling 15+ concurrent Telnet sessions.',
-      'Stabilized cross-platform Docker deployments by fixing 4 critical configuration/runtime bugs, ensuring consistent behavior on Chrome, Firefox, and Edge.',
-      'Optimized and redesigned the Pinia store in Vue to fix an asynchronous race condition between API data and UI rendering, boosting stability, reliability, and performance for real-time data flows.'
-    ]
-  },
-  {
-    years: '05/2022 – 09/2024',
-    title: 'Full Stack Engineer',
-    subtitle: 'Level Access – Ottawa, ON',
-    points: [
-      'Achieved full WCAG 2.2 compliance and improved accessibility for thousands of users by resolving 20+ blockers in partnership with auditors and product teams in an Agile SaaS startup environment.',
-      'Scaled enterprise web crawler capacity 10× (1K → 10K pages per job) by overhauling architecture with RabbitMQ task orchestration, Redis caching, and failure recovery for large-scale audits.',
-      'Cut MongoDB query latency from 30s to <1s by diagnosing production bottlenecks with monitoring and observability tools (AWS logs, Datadog) and optimizing database queries on 700M+ record datasets.',
-      'Built and tested Angular components for responsive, mobile-friendly UIs using RxJS and reactive forms, Figma mockups, and automated unit tests (Jasmine/Karma) plus end-to-end tests (Cypress).',
-      'Designed secure Express REST APIs in a microservice architecture with authentication, authorization, and role-based access, enabling public APIs while ensuring data integrity.'
-    ]
-  },
-  {
     years: '05/2021 – 08/2021',
     title: 'Full Stack Engineer',
     subtitle: 'Red Canari – Ottawa, ON',
