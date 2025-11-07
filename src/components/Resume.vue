@@ -2,6 +2,12 @@
 section#resume
   .section-header
     .title Resume
+    a.btn.fl-btn.btn-download.mb-3(
+      href="/resume.pdf"
+      download="Frank_Resume.pdf"
+    )
+      DownloadIcon(class="me-2", size=18) 
+      span Download Resume
 
   .container-fluid
     .row.justify-content-center
@@ -38,6 +44,8 @@ section#resume
 </template>
 
 <script lang="ts">
+import { Download as DownloadIcon } from 'lucide-vue-next'
+
 type TimelineItem = {
   years: string
   title: string
@@ -49,9 +57,31 @@ type TimelineItem = {
 
 const experience: TimelineItem[] = [
   {
+    years: '12/2024 – Present',
+    title: 'Lead Full Stack Engineer',
+    subtitle: 'Remote Technology Solutions – Remote',
+    points: [
+      'Boosted real-time terminal performance 9× by redesigning canvas rendering and throttling reflows to sustain 30+ concurrent Websocket Telnet sessions without frame drops.',
+      'Eliminated Vue/Pinia async race conditions by refactoring store patterns, improving real-time UI stability and reducing error reports by 80%.',
+      'Shipped secure Express microservices with authn/authz and RBAC, enabling third-party integrations via public REST APIs while maintaining PII auditability.',
+      'Directed architecture for a platform serving 10,000+ users across 30 countries by leading design reviews and code standards to align delivery with roadmap milestones.'
+    ]
+  },
+  {
+    years: '05/2022 – 09/2024',
+    title: 'Full Stack Engineer',
+    subtitle: 'Level Access – Ottawa, ON',
+    points: [
+      'Partnered with auditors and PMs in an Agile SaaS startup environment to deliver WCAG 2.2 compliance across core workflows, resolving 20+ accessibility blockers and increasing accessible coverage to 95%.',
+      'Scaled enterprise web crawler capacity 10× (1K → 10K pages per job) by redesigning architecture with RabbitMQ job orchestration and Redis caching.',
+      'Cut MongoDB query latency from 30s to <1s on 700M+ records by profiling with Datadog/AWS logs and rewriting queries/indexes, lowering p95 API response times by 88%.',
+      'Built responsive, mobile-friendly Angular components with RxJS/reactive forms based on Figma mockups and implemented CI for tests (Jasmine/Karma, Cypress), increasing unit coverage from 76% to 82%.'
+    ]
+  },
+  {
     years: '05/2021 – 08/2021',
     title: 'Full Stack Engineer',
-    subtitle: 'Red Canari – Ottawa, ON',
+    subtitle: 'Malleum – Ottawa, ON',
     points: [
       'Architected a proxy-layer database in a React front-end, applying the SQL hook design pattern and efficient data structures with live schema enforcement, uncovering 40+ critical data integrity failures.'
     ]
@@ -83,7 +113,7 @@ const experience: TimelineItem[] = [
       'Refactored and optimized the Java Learning by Observation Framework, improving runtime speed, scalability, and modularity for academic and research use cases.'
     ]
   }
-]
+];
 
 const education: TimelineItem[] = [
   {
@@ -98,6 +128,7 @@ const timeline: TimelineItem[] = [...experience, ...education]
 
 export default {
   name: 'Resume',
+  components: { DownloadIcon },
   data() {
     return { timeline }
   }
@@ -268,6 +299,7 @@ export default {
       opacity: 1 !important;
       transform: none !important;
     }
-  }
+}
+
 }
 </style>
