@@ -3,7 +3,7 @@ section#resume
   .section-header
     .title Resume
     a.btn.fl-btn.btn-download.mb-3(
-      href="/resume.pdf"
+      href="resume.pdf"
       download="Frank_Resume.pdf"
     )
       DownloadIcon(class="me-2", size=18) 
@@ -58,7 +58,7 @@ type TimelineItem = {
 const experience: TimelineItem[] = [
   {
     years: '09/2024 – Present',
-    title: 'Lead Full Stack Engineer',
+    title: 'Senior Full Stack Engineer',
     subtitle: 'Remote Technology Solutions – Remote',
     points: [
       'Boosted real-time terminal performance 9× by redesigning canvas rendering and throttling reflows to sustain 30+ concurrent Websocket Telnet sessions without frame drops.',
