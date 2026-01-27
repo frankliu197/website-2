@@ -57,7 +57,7 @@ type TimelineItem = {
 
 const experience: TimelineItem[] = [
   {
-    years: '12/2024 – Present',
+    years: '09/2024 – Present',
     title: 'Lead Full Stack Engineer',
     subtitle: 'Remote Technology Solutions – Remote',
     points: [
